@@ -244,6 +244,11 @@ section .landing {
   color: var(--color-white);
 }
 
+.container>.landing-info{
+  margin: 0 auto;
+}
+
+
 .info h1 {
   text-align: left;
   margin: 0;
@@ -254,6 +259,7 @@ section .landing {
 }
 
 .info p {
+  text-align: justify;
   width: 35rem;
   font-size: 20px;
 }
@@ -1053,6 +1059,14 @@ footer .container .socials {
   }
 
   /* Landing Section */
+  .btn {
+    text-align: center;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 1rem 0;
+  }
+
 .landing {
    height: 890px;
    overflow-y: hidden;
@@ -1067,6 +1081,7 @@ footer .container .socials {
     text-align: center;
     row-gap: 6rem;
   }
+
   .socials{
     display: none;
   }
@@ -1155,30 +1170,27 @@ footer .container .socials {
   }
   
   
-  
-  
   .project > ul > li {
     font-size: 14px;
   }
-  
-  
+   
   .actions a {
    font-size: 0.8rem;
   }
   
+  
   /* Skills */
-
   .frontend-skills {
-    width: 100%;
-    height: 100%;
-    margin: auto;
+    width: 30rem;
+    height: 20rem;
+    margin:auto;
   }
   
   .skill-card {
     margin: 0.5rem 0.313rem;
     padding: 0 7px;
     min-width: 60px;
-    height: 90px;
+    height: 70px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1187,10 +1199,6 @@ footer .container .socials {
     color: #fff;
   }
   
-  .tools>img{
-    width: 30px;
-    height: 30px;
-  }
    
   .all-cards {
     display: flex;
@@ -1200,17 +1208,21 @@ footer .container .socials {
   }
   
   .skill-card img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
   .skill-card h4 {
-    font-size: 1rem;
+    font-size: 0.7rem;
+  }
+  
+  .tools>img{
+    width: 33px;
+    height: 33px;
   }
   
   /* Contact */
   
   .contact > .overlay {
-    /* width: 80vw; */
     width: 100%;
     margin: 0 auto;
     height: 100%;
@@ -1226,7 +1238,6 @@ footer .container .socials {
     margin-top: 0.5rem;
     margin: 0 10px;
     font-size: 3.9vw;
-    /* font-weight: 400; */
   }
   
   
@@ -1255,10 +1266,16 @@ footer .container .socials {
   }
   
   .container > form > .btn {
-    width: 14rem;
+    text-align: center;
+    padding: auto 0;
+    width: 12rem;
     height: 4rem;
     border: none;
     margin: 2rem auto 0;
+  }
+
+  input[type="submit"]::-ms-value {
+    text-align: center;
   }
   
   #about-image img{
@@ -1288,7 +1305,7 @@ footer .container .socials {
 @media screen and (max-width: 545px){ 
   /* Skills */
   .frontend-skills {
-    width: 25rem;
+    width: 23rem;
     height: 20rem;
     margin:auto;
   }
